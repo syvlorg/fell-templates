@@ -25,31 +25,9 @@
 
 ;;; Code:
 
-(require 'yasnippet)
-(require 'yankpad)
-(require 'org)
 (require 'titan)
 
-(defun timestamp nil (interactive) (format-time-string "%Y%m%d%H%M%S%N"))
-
-;; Adapted From: https://github.com/AndreaCrotti/yasnippet-snippets/blob/master/yasnippet-snippets.el#L35
-(defconst fell-yankpad-file
-  (expand-file-name
-   "yankpad.org"
-   (file-name-directory
-    ;; Copied from ‘f-this-file’ from f.el.
-    (cond
-     (load-in-progress load-file-name)
-     ((and (boundp 'byte-compile-current-file) byte-compile-current-file)
-      byte-compile-current-file)
-     (:else (buffer-file-name))))))
-
-(define-derived-mode fell-mode org-mode "Fell"
-    (setq yankpad-file-backup yankpad-file)
-    (setq yankpad-file fell-yankpad-file)
-    (yankpad-append-category "fell-mode")
-    (setq yankpad-file yankpad-file-backup)
-    (add-to-list 'auto-mode-alist '("\\.fell.org\\'" . fell-mode)))
+(define-derived-mode fell-mode titan-mode "fell" (meq/ddm "fell"))
 
 (provide 'fell)
 ;;; fell.el ends here
