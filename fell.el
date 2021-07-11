@@ -26,8 +26,6 @@
 ;;; Code:
 
 (require 'titan)
-
-(define-derived-mode fell-mode titan-mode "fell" (meq/ddm "fell"))
-
+(meq/mapc-ddm "fell")
 (provide 'fell)
 ;;; fell.el ends here
