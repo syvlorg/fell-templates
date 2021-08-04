@@ -1,0 +1,21 @@
+# key: ftmp
+# name: markdown fell template
+# binding: m
+# --
+# `(meq/timestamp)` - $1
+## Links
+
+    []()
+    [[]]
+
+## Tags
+
+    `None`
+
+## Notes
+
+    * None
+
+***
+
+$0

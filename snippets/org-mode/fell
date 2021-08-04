@@ -1,0 +1,20 @@
+# key: ftmp
+# name: org fell template
+# binding: o
+# --
+* `(meq/timestamp)` - $1
+** Links
+
+    [[][]]
+
+** Tags
+
+    =None=
+
+** Notes
+
+    - None
+
+=====
+
+$0

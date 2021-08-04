@@ -41,3 +41,55 @@
 (provide 'fell)
 ;;; fell.el ends here
 #+end_src
+
+* snippets
+** markdown-mode
+
+#+begin_src markdown :tangle snippets/markdown-mode/fell
+# key: ftmp
+# name: markdown fell template
+# binding: m
+# --
+# `(meq/timestamp)` - $1
+## Links
+
+    []()
+    [[]]
+
+## Tags
+
+    `None`
+
+## Notes
+
+    * None
+
+***
+
+$0
+#+end_src
+
+** org-mode
+
+#+begin_src org :tangle snippets/org-mode/fell
+# key: ftmp
+# name: org fell template
+# binding: o
+# --
+* `(meq/timestamp)` - $1
+** Links
+
+    [[][]]
+
+** Tags
+
+    =None=
+
+** Notes
+
+    - None
+
+=====
+
+$0
+#+end_src
