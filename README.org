@@ -33,11 +33,7 @@
 ;;; Code:
 
 (require 'titan)
-(meq/setup-titan "fell")
-;;;###autoload
-(defun meq/enable-titan-fell nil (interactive) (meq/enable-titan "fell"))
-;;;###autoload
-(defun meq/disable-titan-fell nil (interactive) (meq/disable-titan "fell"))
+(meq/mapc-ddm "fell")
 (provide 'fell)
 ;;; fell.el ends here
 #+end_src
@@ -45,7 +41,7 @@
 * snippets
 ** markdown-mode
 
-#+begin_src markdown :tangle snippets/markdown-mode/fell
+#+begin_src markdown :tangle snippets/fell-markdown-mode/fell
 # key: ftmp
 # name: markdown fell template
 # binding: m
@@ -71,21 +67,21 @@ $0
 
 ** org-mode
 
-#+begin_src org :tangle snippets/org-mode/fell
+#+begin_src org :tangle snippets/fell-org-mode/fell
 # key: ftmp
 # name: org fell template
 # binding: o
 # --
-* `(meq/timestamp)` - $1
-** Links
+,* `(meq/timestamp)` - $1
+,** Links
 
     [[][]]
 
-** Tags
+,** Tags
 
     =None=
 
-** Notes
+,** Notes
 
     - None
 

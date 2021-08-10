@@ -26,10 +26,6 @@
 ;;; Code:
 
 (require 'titan)
-(meq/setup-titan "fell")
-;;;###autoload
-(defun meq/enable-titan-fell nil (interactive) (meq/enable-titan "fell"))
-;;;###autoload
-(defun meq/disable-titan-fell nil (interactive) (meq/disable-titan "fell"))
+(meq/mapc-ddm "fell")
 (provide 'fell)
 ;;; fell.el ends here
