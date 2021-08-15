@@ -2,7 +2,7 @@
 # name: markdown fell template
 # binding: m
 # --
-# `(meq/timestamp)` - $1
+# `(meq/timestamp)`
 ## Links
 
     []()
