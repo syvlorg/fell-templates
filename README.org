@@ -62,6 +62,8 @@
 
 ***
 
+## Contents
+
 $0
 #+end_src
 
@@ -86,6 +88,8 @@ $0
     - None
 
 =====
+
+,** Contents
 
 $0
 #+end_src
