@@ -32,8 +32,7 @@
 ;;; Code:
 
 (require 'titan)
-(defun meq/fell-ph-func nil)
-(meq/mapc-ddm "fell")
+(meq/mapc-ddm "fell" '(("\\.fell\\.md\\'" . fell-markdown-mode) ("\\.fell\\.org\\'" . fell-org-mode)))
 (provide 'fell)
 ;;; fell.el ends here
 #+end_src
