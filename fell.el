@@ -1,3 +1,7 @@
+;; fell.el
+
+
+;; [[file:README.org::*fell.el][fell.el:1]]
 ;;; fell.el --- a simple package                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021  Jeet Ray
@@ -26,7 +30,7 @@
 ;;; Code:
 
 (require 'titan)
-(defun meq/fell-ph-func nil)
-(meq/mapc-ddm "fell")
+(meq/mapc-ddm "fell" '(("\\.fell\\.md\\'" . fell-markdown-mode) ("\\.fell\\.org\\'" . fell-org-mode)))
 (provide 'fell)
 ;;; fell.el ends here
+;; fell.el:1 ends here
