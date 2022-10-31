@@ -1,10 +1,7 @@
-#+setupfile: ./settings/README.org
-#+include: ./settings/README.org
-
-* fell.el
+* fell-templates.el
 
 #+begin_src emacs-lisp :tangle (meq/tangle-path)
-;;; fell.el --- a simple package                     -*- lexical-binding: t; -*-
+;;; fell-templates.el --- a simple package                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021  Jeet Ray
 
@@ -31,8 +28,8 @@
 
 ;;; Code:
 
-(require 'titan)
+(require 'titan-templates)
 (meq/mapc-ddm "fell" '(("\\.fell\\.md\\'" . fell-markdown-mode) ("\\.fell\\.org\\'" . fell-org-mode)))
-(provide 'fell)
-;;; fell.el ends here
+(provide 'fell-templates)
+;;; fell-templates.el ends here
 #+end_src
